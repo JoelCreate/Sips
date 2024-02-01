@@ -23,6 +23,11 @@ body {
     padding: 35px 37px;
 }
 
+#header-title {
+    display: flex;
+    justify-content: space-between;
+}
+
 #logo {
     color: #a98743;
     font-weight: 700;
@@ -34,4 +39,33 @@ body {
     display: inline-block;
     margin-left: 3px;
     transform: rotate(15deg);
+}
+
+#logo-subtitle {
+    color:#a98743;
+    font-weight: 700;
+    flex-grow: 2;
+    margin: 10px auto 10px 10px;
+}
+
+#profile-avatar {
+    background: url('./images/Avatar.png');
+    width: 45px;
+    height: 45px;
+}
+
+#welcome-message {
+    color: #07090F;
+    font-weight: 700;
+    font-size: 1.25rem;
+    position: relative;
+}
+
+#welcome-message::after {
+    content: url('./images/Sun\ Icon.png');
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-left: 8px;
+    margin-top: -5px;
 }
