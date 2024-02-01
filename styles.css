@@ -1,3 +1,22 @@
+*{
+    font-family: 'DM Sans', sans-serif;
+}
+
 body {
     background: #EEEBD3;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+}
+
+#container {
+    width: 100%;
+    max-width: 395px;
+    height: 852px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #CDAC6E;
+    border-radius: 25px;
 }
