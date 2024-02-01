@@ -86,3 +86,19 @@ body {
     top: -2px;
     left: 15px;
 }
+
+#card-logo {
+    color: #EEEBD3;
+    font-weight: 700;
+    font-size: 1.25rem;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+}
+
+#card-logo::after {
+    content: '!';
+    display: inline-block;
+    margin-left: 3px;
+    transform: rotate(15deg);
+}
