@@ -102,3 +102,25 @@ body {
     margin-left: 3px;
     transform: rotate(15deg);
 }
+
+#card-balance {
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#current-card-balance {
+    color: #a98743;
+}
+
+.btn {
+    background: #CDAC6A;
+    color: #EEEBD3;
+    text-align: center;
+    border-radius: 50px;
+    padding-top: 6px;
+    width: 120px;
+    height: 35px;
+}
