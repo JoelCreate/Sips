@@ -121,6 +121,7 @@ body {
 #current-card-balance {
     color: #a98743;
 }
+
 .btn {
     background: #CDAC6A;
     color: #EEEBD3;
@@ -192,4 +193,23 @@ body {
     position: absolute;
     right: 10px;
     bottom: 5px;
+}
+
+#cart-section {
+    display: flex;
+    font-weight: 700;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.cart-btn {
+    font-size: 1.25rem;
+    width: 220px;
+    height: 50px;
+    padding-top: 12px;
+}
+
+#total-price {
+    font-size: 1.25rem;
+    color: #A98743;
 }
