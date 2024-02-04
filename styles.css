@@ -10,6 +10,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100svh;
+    max-width: 395px;
+    margin: 0 auto;
 }
 
 #container {
@@ -26,6 +28,11 @@ body {
 #header-title {
     display: flex;
     justify-content: space-between;
+}
+
+.section-title {
+    color: #a98743;
+    margin: 10px 0;
 }
 
 #logo {
@@ -114,7 +121,6 @@ body {
 #current-card-balance {
     color: #a98743;
 }
-
 .btn {
     background: #CDAC6A;
     color: #EEEBD3;
@@ -123,4 +129,26 @@ body {
     padding-top: 6px;
     width: 120px;
     height: 35px;
+}
+
+.btn-active {
+    background-color: #5081C9;
+}
+
+.btn-disabled {
+    background: #DDD9B6;
+    color: #BFBA8F;
+}
+
+
+#category-btns {
+    display: flex;
+    position: absolute;
+    max-width: 356px /*max-width (395px - padding 37px - 1px for border)*/;
+    overflow: hidden;
+}
+
+#category-btns > .btn {
+    margin-right: 20px;    
+    flex-shrink: 0;
 }
