@@ -189,6 +189,18 @@ body {
     margin-top: 120px;
 }
 
+#item-image {
+    background: url('./images/pink-sprinkle.png') no-repeat center center;
+    background-size: cover;
+    width: 105px;
+    height: 105px;
+    left: 0;
+    right: 0;
+    top: 25px;
+    margin: auto;
+    position: absolute;
+}
+
 #add-item {
     position: absolute;
     right: 10px;
