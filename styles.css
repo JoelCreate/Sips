@@ -165,13 +165,15 @@ body {
 .item-card {
     background-image: url('./images/circle-gradient.png');
     background-color: #DEDABC;
-    width: 150px;
+    width: 100%;
     max-width: 150px;
-    height: 180px;
+    height: 100%;
     max-height: 180px;
     border-radius: 15px;
     padding: 10px;
     position: relative;
+    flex-shrink: 0;
+    margin-right: 20px;
 }
 
 .item-card-text {
@@ -189,9 +191,7 @@ body {
     margin-top: 120px;
 }
 
-#item-image {
-    background: url('./images/pink-sprinkle.png') no-repeat center center;
-    background-size: cover;
+#item-image img {
     width: 105px;
     height: 105px;
     left: 0;
