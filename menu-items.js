@@ -31,7 +31,7 @@ export const menu = [
         itemType: "donut",
         itemName: "Chocolate Swirl",
         itemPrice: "$2.99",
-        itemImage: "chocolate.swirl.png",
+        itemImage: "chocolate-swirl.png",
         imageAlt: "Chocolate frosted donut with vanilla swirled frosting"
     },
 ]
