@@ -12,6 +12,7 @@ body {
     height: 100svh;
     max-width: 395px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 #container {
@@ -81,7 +82,9 @@ body {
     background: url('./images/member-card.png') center center no-repeat;
     background-size: contain;
     width: 318px;
+    min-width: 318px;
     height: 174px;
+    min-height: 174px;
     margin-top: 24px;
     position: relative;
 }
@@ -154,12 +157,15 @@ body {
 }
 
 #menu-section {
-    margin-top: 40px;
+    margin-top: 40px;    
 }
 
 #menu-cards {
     display: flex;
     justify-content: space-between;
+    overflow-x: scroll; 
+    overflow-y: hidden;
+    padding-bottom: 20px;
 }
 
 .item-card {
@@ -213,7 +219,7 @@ body {
     display: flex;
     font-weight: 700;
     justify-content: space-between;
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
 .cart-btn {
