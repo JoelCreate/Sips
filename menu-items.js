@@ -36,7 +36,7 @@ export const menu = [
     },
     {
         itemType: "coffee",
-        itemName: "Latte",
+        itemName: "Classic Latte",
         itemPrice: "$4.99",
         itemImage: "latte.png",
         imageAlt: "Latte coffee"
@@ -57,7 +57,7 @@ export const menu = [
     },
     {
         itemType: "coffee",
-        itemName: "Mocha",
+        itemName: "Mocha Loca",
         itemPrice: "$6.99",
         itemImage: "mocha.png",
         imageAlt: "Mocha coffee"

@@ -168,6 +168,18 @@ body {
     padding-bottom: 20px;
 }
 
+#menu-cards::-webkit-scrollbar {
+    background: #DEDABC;
+    border-radius: 50px;
+    height: 5px;
+}
+
+#menu-cards::-webkit-scrollbar-thumb {
+    background: #A98743;
+    border-radius: 50px;
+    width: 100px;
+}
+
 .item-card {
     background-image: url('./images/circle-gradient.png');
     background-color: #DEDABC;
