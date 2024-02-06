@@ -1,17 +1,17 @@
 export const menu = [
     {
         itemType: "coffee",
-        itemName: "Classic Latte",
-        itemPrice: "$4.99",
-        itemImage: "latte.png",
-        imageAlt: "Latte coffee"
+        itemName: "Classic Espresso",
+        itemPrice: "$3.99",
+        itemImage: "espresso.png",
+        imageAlt: "Espresso coffee"
     },
     {
         itemType: "coffee",
-        itemName: "Frappe",
-        itemPrice: "$6.99",
-        itemImage: "frappe.png",
-        imageAlt: "Frappe coffee"
+        itemName: "Caramel Macchiato",
+        itemPrice: "$5.99",
+        itemImage: "caramel.png",
+        imageAlt: "Caramel macchiato coffee"
     },
     {
         itemType: "coffee",
