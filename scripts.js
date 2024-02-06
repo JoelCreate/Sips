@@ -1,6 +1,23 @@
 import {menu} from "/menu-items.js"
 
+const favoritesBtn = document.getElementById("favorites-btn")
+const coffeeBtn = document.getElementById("coffee-btn")
+const donutsBtn = document.getElementById("donuts-btn")
+const menuTitle = document.getElementById("menu-title")
 const menuCard = document.getElementById("menu-cards")
+
+menuTitle.innerHTML = "Menu"
+
+favoritesBtn.addEventListener("click", function(){
+    menuTitle.innerHTML = "Your Favorites"
+})
+coffeeBtn.addEventListener("click", function(){
+    menuTitle.innerHTML = "Coffee"
+})
+
+donutsBtn.addEventListener("click", function(){
+    menuTitle.innerHTML = "Donuts"
+})
 
 const menuItemHtml = menu.map(item => {
     return `
