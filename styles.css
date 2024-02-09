@@ -210,6 +210,19 @@ body {
     top: 10px;
 }
 
+#item-fav:hover {
+    cursor: pointer;
+}
+
+.favoriteselected {
+    color: #D16D6A;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
 #item-name {
     margin-top: 120px;
 }
