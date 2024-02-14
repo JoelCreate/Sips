@@ -3,8 +3,21 @@ import {menu} from "/menu-items.js"
 const favoritesBtn = document.getElementById("favorites-btn")
 const coffeeBtn = document.getElementById("coffee-btn")
 const donutsBtn = document.getElementById("donuts-btn")
+const categoryBtns = document.querySelectorAll(".category-btns")
 const menuTitle = document.getElementById("menu-title")
 const menuCard = document.getElementById("menu-cards")
+
+categoryBtns.forEach((button) => {
+    button.addEventListener("click", function(){
+        button.classList.toggle("btn-active")
+    })
+
+    // if(button === coffeeBtn) {
+    //     menuTitle.innerHTML = "Coffee"
+    //     includesCoffee()
+    // }
+    
+})
 
 
 menuTitle.innerHTML = "Menu"
@@ -12,10 +25,10 @@ menuTitle.innerHTML = "Menu"
 favoritesBtn.addEventListener("click", function(){
     menuTitle.innerHTML = "Your Favorites"
 })
-coffeeBtn.addEventListener("click", function(){
-    menuTitle.innerHTML = "Coffee"
-    includesCoffee() 
-})
+// coffeeBtn.addEventListener("click", function(){
+//     menuTitle.innerHTML = "Coffee"
+//     includesCoffee() 
+// })
 
 function includesCoffee() {
     const coffeeCards = menu.map(item => {
@@ -81,3 +94,4 @@ favHeart.forEach((heart) => {
         heart.classList.toggle("favoriteselected")
    })    
 })
+
