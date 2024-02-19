@@ -25,10 +25,11 @@ menuTitle.innerHTML = "Menu"
 favoritesBtn.addEventListener("click", function(){
     menuTitle.innerHTML = "Your Favorites"
 })
-// coffeeBtn.addEventListener("click", function(){
-//     menuTitle.innerHTML = "Coffee"
-//     includesCoffee() 
-// })
+coffeeBtn.addEventListener("click", function(){
+    menuTitle.innerHTML = "Coffee"    
+    includesCoffee() 
+    addFavorite()
+})
 
 function includesCoffee() {
     const coffeeCards = menu.map(item => {
@@ -52,6 +53,7 @@ function includesCoffee() {
 donutsBtn.addEventListener("click", function(){
     menuTitle.innerHTML = "Donuts"
     includesDount()
+    addFavorite()
 })
 
 function includesDount() {
@@ -87,11 +89,14 @@ const menuItemHtml = menu.map(item => {
 menuCard.innerHTML = menuItemHtml
 
 //Favorite heart clicked on item-card
-const favHeart = document.querySelectorAll(".favorite")
+function addFavorite() {
+    const favHeart = document.querySelectorAll(".favorite")
 
-favHeart.forEach((heart) => {
-   heart.addEventListener("click", function(){
-        heart.classList.toggle("favoriteselected")
-   })    
-})
+    favHeart.forEach((heart) => {
+    heart.addEventListener("click", function(){
+            heart.classList.toggle("favoriteselected")
+    })    
+    })
+}
 
+addFavorite()
