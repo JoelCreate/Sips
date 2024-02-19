@@ -135,7 +135,8 @@ body {
     height: 35px;
 }
 
-.btn:hover {
+.btn:hover,
+.close-modal:hover {
     cursor: pointer;
     opacity: 0.8;
 }
@@ -147,6 +148,46 @@ body {
 .btn-disabled {
     background: #DDD9B6;
     color: #BFBA8F;
+}
+
+.display-block {
+    display: block;
+}
+
+#add-balance-container {
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    max-width: 395px;
+    height: 852px;
+    border-radius: 25px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 10;
+    display: none;
+}
+
+#close-modal {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+#add-balance {
+    background: #fff;
+    border-radius: 15px;
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 99999;
 }
 
 #category-btns {

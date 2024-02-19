@@ -6,6 +6,28 @@ const donutsBtn = document.getElementById("donuts-btn")
 const categoryBtns = document.querySelectorAll(".category-btns")
 const menuTitle = document.getElementById("menu-title")
 const menuCard = document.getElementById("menu-cards")
+const addBalanceContainer = document.getElementById("add-balance-container")
+const reloadBtn = document.getElementById("reload-btn")
+const currentCardBallance = document.getElementById("current-card-balance")
+const closeModal = document.getElementById("close-modal")
+
+currentCardBallance.innerHTML = `$19.88`
+
+
+reloadBtn.addEventListener("click", function() {
+    addBalanceContainer.style.display = "block"
+})
+
+closeModal.addEventListener("click", function () {
+    addBalanceContainer.style.display = "none"
+})
+
+window.addEventListener("click", function(event) {
+    if (event.target == addBalanceContainer) {
+      addBalanceContainer.style.display = "none"
+    }
+  })
+
 
 categoryBtns.forEach((button) => {
     button.addEventListener("click", function(){
