@@ -10,13 +10,13 @@ const menuCard = document.getElementById("menu-cards")
 categoryBtns.forEach((button) => {
     button.addEventListener("click", function(){
         button.classList.toggle("btn-active")
-    })
 
-    // if(button === coffeeBtn) {
-    //     menuTitle.innerHTML = "Coffee"
-    //     includesCoffee()
-    // }
-    
+        categoryBtns.forEach((notActiveBtn) => {
+            if(notActiveBtn !== button && notActiveBtn.classList.contains("btn-active")) {
+                notActiveBtn.classList.remove("btn-active")
+            }
+        })
+    })
 })
 
 
