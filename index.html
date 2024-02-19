@@ -39,8 +39,17 @@
         <div id="add-balance-container">
             <div id="add-balance">
                 <span class="material-symbols-outlined" id="close-modal">cancel</span>
-                <h3>Add money to your Sips card!</h3> 
-                <div id="current-balance"></div>
+                <span>Add money to your Sips card!</span> 
+                <div id="current-balance">Your Current Balance is <div id="get-balance"></div></div>
+                <label for="amount">Add money:</label>
+                <select name="amount" id="amount">
+                    <option value="1">$1</option>
+                    <option value="5">$5</option>
+                    <option value="10">$10</option>
+                    <option value="15">$15</option>
+                    <option value="20">$20</option>
+                </select>
+                <div id="add-money-btn" class="btn">Add Money</div>
             </div>
         </div>        
 

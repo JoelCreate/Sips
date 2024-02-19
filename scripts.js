@@ -8,11 +8,16 @@ const menuTitle = document.getElementById("menu-title")
 const menuCard = document.getElementById("menu-cards")
 const addBalanceContainer = document.getElementById("add-balance-container")
 const reloadBtn = document.getElementById("reload-btn")
-const currentCardBallance = document.getElementById("current-card-balance")
+const currentCardBalance = document.getElementById("current-card-balance")
+const getCurrentBalance = document.getElementById("get-balance")
 const closeModal = document.getElementById("close-modal")
 
-currentCardBallance.innerHTML = `$19.88`
 
+let cardBalance =  "$19.88"
+
+currentCardBalance.innerHTML = cardBalance
+
+document.getElementById("get-balance").innerHTML = cardBalance
 
 reloadBtn.addEventListener("click", function() {
     addBalanceContainer.style.display = "block"
