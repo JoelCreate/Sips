@@ -121,6 +121,12 @@ body {
     margin-top: 10px;
 }
 
+#current-card-balance::before{
+    content: '$';
+    color: #a98743;
+}
+
+
 #current-card-balance {
     color: #a98743;
 }
