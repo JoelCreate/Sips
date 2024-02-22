@@ -11,14 +11,16 @@ const reloadBtn = document.getElementById("reload-btn")
 const currentCardBalance = document.getElementById("current-card-balance")
 const getCurrentBalance = document.getElementById("get-balance")
 const closeModal = document.getElementById("close-modal")
-const amount = document.getElementById("amount")
+let amount = document.getElementById("amount")
 
-let cardBalance =  "19.88"
+let cardBalance =  19.88
+currentCardBalance.textContent = cardBalance
+amount.value= 0
 
-currentCardBalance.innerHTML = cardBalance
-
-document.getElementById("get-balance").innerHTML = cardBalance
-
+function updateCardBalance() {
+    getCurrentBalance.textContent = Number(amount.value) + Number(cardBalance)
+}
+setInterval(updateCardBalance, 100)
 
 reloadBtn.addEventListener("click", function() {
     addBalanceContainer.style.display = "block"
@@ -34,9 +36,7 @@ window.addEventListener("click", function(event) {
     }
 })
 
-document.getElementById("add-money-btn").addEventListener("click", function() {
-    let convertBalanceToNumber = Number(cardBalance)
-    currentCardBalance.innerHTML = convertBalanceToNumber + Number(amount.value)
+document.getElementById("add-money-btn").addEventListener("click", function() {    
     addBalanceContainer.style.display = "none"
 })
 
